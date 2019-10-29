@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Eric Imhauser</Authors>
+    <Copyright>Copyright © 2019</Copyright>
+    <Company>Eric Imhauser</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Copy automatically properties from one object to another</Description>
+    <PackageProjectUrl>https://github.com/imhauser/Imhauser.ObjectMapper/wiki</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/imhauser/Imhauser.ObjectMapper</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>- Copy to existing object
+- New ToList method</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>
