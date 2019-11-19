@@ -20,6 +20,9 @@ namespace Imhauser.ObjectMapper
         /// <returns>The newly creadted target object</returns>
         public static TTarget To<TSource,TTarget>(TSource source) where TSource : class
         {
+            if (source == null)
+                return default;
+
             TTarget target = (TTarget)Activator.CreateInstance(typeof(TTarget));
             return To<TSource, TTarget>(source, target);
         }
@@ -35,6 +38,13 @@ namespace Imhauser.ObjectMapper
         /// <returns>The target object</returns>
         public static TTarget To<TSource, TTarget>(TSource source, TTarget target) where TSource : class
         {
+            if (source == null)
+                return default;
+
+            if (target == null)
+                return To<TSource, TTarget>(source);
+
+
             var sourceProperties = source.GetType().GetProperties();
             var targetProperties = target.GetType().GetProperties();
 

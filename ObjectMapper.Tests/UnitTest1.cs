@@ -54,6 +54,12 @@ namespace ObjectMapper.Tests
 
             view = Imhauser.ObjectMapper.Copy.To<ContactDb, View>(contactDb, view);
             Assert.Equal(contactDb.ContactName, view.ContactName);
+
+
+            addressDb = null;
+            view = Imhauser.ObjectMapper.Copy.To<AddressDb, View>(addressDb);
+            Assert.Null(view);
+
         }
 
         [Fact]
