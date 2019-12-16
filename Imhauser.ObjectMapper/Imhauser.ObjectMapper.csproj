@@ -11,8 +11,10 @@
     <PackageProjectUrl>https://github.com/imhauser/Imhauser.ObjectMapper/wiki</PackageProjectUrl>
     <RepositoryUrl>https://github.com/imhauser/Imhauser.ObjectMapper</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>- Handle null parameters</PackageReleaseNotes>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>- Handles nullable target</PackageReleaseNotes>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
   </PropertyGroup>
 
 </Project>
