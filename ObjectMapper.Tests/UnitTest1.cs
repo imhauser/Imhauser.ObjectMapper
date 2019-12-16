@@ -11,6 +11,7 @@ namespace ObjectMapper.Tests
         public string Street { get; set; }
         public string ZipCode { get; set; }
         public string City { get; set; }
+        public int Qty { get; set; }
     }
     public class ContactDb
     {
@@ -28,6 +29,7 @@ namespace ObjectMapper.Tests
         public string City { get; set; }
         public string ContactName { get; set; }
         public string Phone { get; set; }
+        public int? Qty { get; set; }
     }
 
 
@@ -41,7 +43,9 @@ namespace ObjectMapper.Tests
             {
                 Street = "Ellegårdsvej 74",
                 ZipCode = "2820",
-                City = "Gentofte"
+                City = "Gentofte",
+                Qty=10
+                
             };
             var contactDb = new ContactDb()
             {

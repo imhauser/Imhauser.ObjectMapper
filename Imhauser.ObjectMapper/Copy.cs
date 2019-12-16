@@ -52,11 +52,21 @@ namespace Imhauser.ObjectMapper
             {
                 foreach (var childProperty in targetProperties)
                 {
-                    if (parentProperty.Name == childProperty.Name && parentProperty.PropertyType == childProperty.PropertyType)
+                    if (parentProperty.Name == childProperty.Name)
                     {
-                        childProperty.SetValue(target, parentProperty.GetValue(source));
-                        break;
+                        if (parentProperty.PropertyType == childProperty.PropertyType)
+                        {
+                            childProperty.SetValue(target, parentProperty.GetValue(source));
+                            break;
+                        }
+                        if (childProperty.PropertyType.Name == "Nullable`1" && parentProperty.PropertyType == Nullable.GetUnderlyingType(childProperty.PropertyType))
+                        {
+                            childProperty.SetValue(target, parentProperty.GetValue(source));
+                            break;
+                        }
+
                     }
+
                 }
             }
             return target;

@@ -11,9 +11,8 @@
     <PackageProjectUrl>https://github.com/imhauser/Imhauser.ObjectMapper/wiki</PackageProjectUrl>
     <RepositoryUrl>https://github.com/imhauser/Imhauser.ObjectMapper</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>- Copy to existing object
-- New ToList method</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>- Handle null parameters</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
